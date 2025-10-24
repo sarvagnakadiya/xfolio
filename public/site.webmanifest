@@ -1,0 +1,20 @@
+{
+  "name": "Sarvagna Kadiya - Portfolio",
+  "short_name": "Sarvagna",
+  "description": "Smart contract-focused full-stack developer specializing in DeFi and on-chain automation. Building efficient, secure protocols that make crypto practical and usable.",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#1da1f2",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["portfolio", "developer", "blockchain", "defi"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Computer Engineering (Artificial intelligence & data science)",
+    "subtitle": "Graduate School of Engineering and Technology GTU",
+    "date": "Aug 2022 - May 2024",
+    "description": "Masters of Engineering (ME) in Computer Engineering with specialization in Artificial Intelligence & Data Science. Achieved 8.16/10.00 CGPA.",
+    "likes": 156,
+    "location": "Chandkheda, Ahmedabad",
+    "verified": true,
+    "gpa": "8.16/10.00 CGPA",
+    "degree": "Masters of Engineering (ME)"
+  },
+  {
+    "id": "2",
+    "title": "Computer Engineering",
+    "subtitle": "SAL Engineering And Technical Institute",
+    "date": "Aug 2019 - May 2022",
+    "description": "Bachelor of Engineering (BE) in Computer Engineering. Achieved 8.23/10.00 CGPA.",
+    "likes": 142,
+    "location": "Sola, Ahmedabad",
+    "verified": true,
+    "gpa": "8.23/10.00 CGPA",
+    "degree": "Bachelor of Engineering (BE)"
+  },
+  {
+    "id": "3",
+    "title": "Computer Engineering",
+    "subtitle": "R.C. Technical Institute",
+    "date": "Aug 2016 - April 2019",
+    "description": "Diploma in Computer Engineering. Achieved 8.19/10.00 CGPA.",
+    "likes": 98,
+    "location": "Sola, Ahmedabad",
+    "verified": true,
+    "gpa": "8.19/10.00 CGPA",
+    "degree": "Diploma"
+  }
+]

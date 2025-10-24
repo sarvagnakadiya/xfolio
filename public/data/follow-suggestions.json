@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "GitHub",
+    "username": "github",
+    "bio": "How people build software.",
+    "verified": true,
+    "followers": "2.1M",
+    "url": "https://github.com"
+  },
+  {
+    "id": "2", 
+    "name": "LinkedIn",
+    "username": "linkedin",
+    "bio": "Welcome to the world's largest professional network.",
+    "verified": true,
+    "followers": "890K",
+    "url": "https://linkedin.com/in/yourname"
+  },
+  {
+    "id": "3",
+    "name": "Stack Overflow",
+    "username": "stackoverflow",
+    "bio": "Where developers learn, share & build careers.",
+    "verified": true,
+    "followers": "456K",
+    "url": "https://stackoverflow.com/users/yourname"
+  },
+  {
+    "id": "4",
+    "name": "Dev.to",
+    "username": "devto",
+    "bio": "A constructive and inclusive social network for software developers.",
+    "verified": false,
+    "followers": "234K",
+    "url": "https://dev.to/yourname"
+  }
+]

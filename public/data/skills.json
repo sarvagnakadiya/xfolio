@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "title": "Blockchain & Web3",
+    "subtitle": "Smart Contracts & DeFi Technologies",
+    "description": "Expert in blockchain development with extensive experience in smart contracts, DeFi protocols, DEXs, NFTs, and DAOs. Building the future of decentralized finance.",
+    "likes": 234,
+    "location": "Web3 Technologies",
+    "verified": true,
+    "category": "Blockchain & Web3",
+    "skills": ["Solidity", "Defi", "DEX", "NFTs", "DAOs", "Foundry", "Hardhat"],
+    "icon": "CodeBracketIcon",
+    "color": "blue"
+  },
+  {
+    "id": "2",
+    "title": "Programming Languages",
+    "subtitle": "Multi-language Development",
+    "description": "Proficient in multiple programming languages with focus on systems programming, web development, and blockchain applications. Strong foundation across the tech stack.",
+    "likes": 189,
+    "location": "Software Development",
+    "verified": true,
+    "category": "Programming Languages",
+    "skills": ["Rust", "Javascript", "Typescript", "Python"],
+    "icon": "CodeBracketIcon",
+    "color": "green"
+  },
+  {
+    "id": "3",
+    "title": "Frontend Development",
+    "subtitle": "Modern React Ecosystem",
+    "description": "Specialized in building modern, responsive web applications using React ecosystem. Creating beautiful and functional user interfaces.",
+    "likes": 156,
+    "location": "Web Development",
+    "verified": true,
+    "category": "Frontend Development",
+    "skills": ["React.js", "Next.js", "Vite.js"],
+    "icon": "ComputerDesktopIcon",
+    "color": "purple"
+  },
+  {
+    "id": "4",
+    "title": "Backend Development",
+    "subtitle": "API Development & Server Architecture",
+    "description": "Experience in building scalable backend systems and RESTful APIs. Creating robust server-side applications and microservices.",
+    "likes": 123,
+    "location": "Server Technologies",
+    "verified": true,
+    "category": "Backend Development",
+    "skills": ["Node.js", "Express APIs", "flask APIs"],
+    "icon": "ServerIcon",
+    "color": "orange"
+  },
+  {
+    "id": "5",
+    "title": "Database & Storage",
+    "subtitle": "Data Management & Storage Solutions",
+    "description": "Comprehensive experience with various database systems and storage solutions. From traditional SQL to NoSQL and decentralized storage.",
+    "likes": 98,
+    "location": "Data Technologies",
+    "verified": true,
+    "category": "Database & Storage",
+    "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "IPFS"],
+    "icon": "CircleStackIcon",
+    "color": "teal"
+  },
+  {
+    "id": "6",
+    "title": "AI & Machine Learning",
+    "subtitle": "AI Integration & Model Development",
+    "description": "Specialized in AI integration and machine learning model development. Building intelligent applications with cutting-edge AI technologies.",
+    "likes": 145,
+    "location": "Artificial Intelligence",
+    "verified": true,
+    "category": "AI",
+    "skills": ["LangChain", "OpenAI API", "Hugging Face", "TensorFlow", "PyTorch"],
+    "icon": "CpuChipIcon",
+    "color": "pink"
+  }
+]

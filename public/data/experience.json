@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "title": "WeDefin",
+    "subtitle": "Smart Contract Developer",
+    "date": "Oct 2025 - Present",
+    "description": "Currently developing a DEX aggregator protocol for WeDefin, focusing on efficient on-chain routing and optimized swap execution.",
+    "likes": 45,
+    "location": "Remote",
+    "technologies": ["Solidity", "DeFi", "DEX", "Smart Contracts", "Web3"],
+    "verified": true,
+    "company": "WeDefin",
+    "type": "Part-time"
+  },
+  {
+    "id": "2",
+    "title": "Gasyard Finance",
+    "subtitle": "Freelance Developer",
+    "date": "Aug 2025 (2 weeks)",
+    "description": "Built a Farcaster MiniApp for Gasyard Finance, integrating DeFi actions directly within the Farcaster social layer.",
+    "likes": 32,
+    "location": "Remote",
+    "technologies": ["Farcaster", "DeFi", "MiniApp", "Web3", "SocialFi"],
+    "verified": true,
+    "company": "Gasyard Finance",
+    "type": "Freelance"
+  },
+  {
+    "id": "3",
+    "title": "Coinvise/Earnkit",
+    "subtitle": "Full stack Developer",
+    "date": "Dec 2024 - Jun 2025",
+    "description": "At Coinvise, my primary responsibility is developing an AI agent and an AI framework SDK. This AI agent is equipped with multiple tools, enabling functionalities such as token deployment and listing, NFT creation, campaign management, Web3 interaction, and more. Additionally, the framework supports the integration of custom tools to cater to enterprise-specific requirements.",
+    "likes": 89,
+    "location": "Ahmedabad, Gujarat",
+    "technologies": ["AI", "Web3", "Blockchain", "Smart Contracts", "SDK Development"],
+    "verified": true,
+    "company": "Coinvise/Earnkit",
+    "type": "Full-time"
+  },
+  {
+    "id": "4",
+    "title": "Lamprostech PVT LTD",
+    "subtitle": "Blockchain Developer",
+    "date": "Jul 2022 - Nov 2024",
+    "description": "At Lamprostech, I worked as a Blockchain and Smart Contract Developer, gaining hands-on experience in building decentralized solutions. I took part in several hackathons (both online and offline), won a few, and worked on some exciting and innovative blockchain projects. My role involved designing, testing, and deploying secure smart contracts while staying updated on the latest trends in the blockchain space.",
+    "likes": 156,
+    "location": "Ahmedabad, Gujarat",
+    "technologies": ["Solidity", "Web3", "DeFi", "Smart Contracts", "Ethereum"],
+    "verified": true,
+    "company": "Lamprostech PVT LTD",
+    "type": "Full-time"
+  },
+  {
+    "id": "5",
+    "title": "Codelytical",
+    "subtitle": "React Native Intern",
+    "date": "Jan 2021 - Apr 2021",
+    "description": "Worked as an intern at Codelytical where I tried to build an Ecommerce mobile application. There I learned React Native, front-end development, and Redux for state management.",
+    "likes": 67,
+    "location": "Ahmedabad, Gujarat",
+    "technologies": ["React Native", "JavaScript", "Redux", "Mobile Development"],
+    "verified": true,
+    "company": "Codelytical",
+    "type": "Internship"
+  }
+]

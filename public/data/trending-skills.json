@@ -1,0 +1,50 @@
+[
+  {
+    "name": "React 18",
+    "query": "react18",
+    "volume": 15420,
+    "category": "Frontend"
+  },
+  {
+    "name": "TypeScript",
+    "query": "typescript",
+    "volume": 12890,
+    "category": "Programming"
+  },
+  {
+    "name": "Next.js",
+    "query": "nextjs",
+    "volume": 11250,
+    "category": "Framework"
+  },
+  {
+    "name": "Web3",
+    "query": "web3",
+    "volume": 9870,
+    "category": "Technology"
+  },
+  {
+    "name": "AI/ML",
+    "query": "aiml",
+    "volume": 8765,
+    "category": "Technology"
+  },
+  {
+    "name": "Tailwind CSS",
+    "query": "tailwindcss",
+    "volume": 7654,
+    "category": "Styling"
+  },
+  {
+    "name": "GraphQL",
+    "query": "graphql",
+    "volume": 6543,
+    "category": "API"
+  },
+  {
+    "name": "Docker",
+    "query": "docker",
+    "volume": 5432,
+    "category": "DevOps"
+  }
+]
