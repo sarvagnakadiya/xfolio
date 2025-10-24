@@ -2,11 +2,11 @@
   {
     "id": "1",
     "title": "WeDefin",
-    "subtitle": "Smart Contract Developer",
+    "subtitle": "Smart Contract Developer(freelance)",
     "date": "Oct 2025 - Present",
     "description": "Currently developing a DEX aggregator protocol for WeDefin, focusing on efficient on-chain routing and optimized swap execution.",
     "likes": 45,
-    "location": "Remote",
+    "location": "Remote(part-time)",
     "technologies": ["Solidity", "DeFi", "DEX", "Smart Contracts", "Web3"],
     "verified": true,
     "company": "WeDefin",
