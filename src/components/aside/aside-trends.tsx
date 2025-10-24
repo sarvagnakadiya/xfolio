@@ -20,52 +20,52 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
   // Static trending skills data
   const trends = [
     {
-      name: 'React 18',
-      query: 'react18',
-      volume: 15420,
-      category: 'Frontend'
+      name: 'Solidity',
+      query: 'solidity',
+      volume: 17600,
+      category: 'Smart Contracts'
     },
     {
-      name: 'TypeScript',
-      query: 'typescript',
-      volume: 12890,
-      category: 'Programming'
+      name: 'Foundry',
+      query: 'foundry',
+      volume: 16200,
+      category: 'Testing'
+    },
+    {
+      name: 'Uniswap V3',
+      query: 'uniswapv3',
+      volume: 14500,
+      category: 'DeFi'
     },
     {
       name: 'Next.js',
       query: 'nextjs',
-      volume: 11250,
+      volume: 13200,
       category: 'Framework'
     },
     {
-      name: 'Web3',
-      query: 'web3',
-      volume: 9870,
-      category: 'Technology'
+      name: 'Prisma',
+      query: 'prisma',
+      volume: 11800,
+      category: 'Database'
     },
     {
-      name: 'AI/ML',
-      query: 'aiml',
-      volume: 8765,
-      category: 'Technology'
+      name: 'Farcaster Frames',
+      query: 'farcaster',
+      volume: 10200,
+      category: 'Web3 Social'
     },
     {
-      name: 'Tailwind CSS',
-      query: 'tailwindcss',
-      volume: 7654,
-      category: 'Styling'
+      name: 'RainbowKit + SIWE',
+      query: 'rainbowkit',
+      volume: 8900,
+      category: 'Auth'
     },
     {
-      name: 'GraphQL',
-      query: 'graphql',
-      volume: 6543,
-      category: 'API'
-    },
-    {
-      name: 'Docker',
-      query: 'docker',
-      volume: 5432,
-      category: 'DevOps'
+      name: 'AI Agents',
+      query: 'aiagents',
+      volume: 7600,
+      category: 'AI + Automation'
     }
   ];
 
