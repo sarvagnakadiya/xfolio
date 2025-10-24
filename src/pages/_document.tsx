@@ -12,6 +12,8 @@ export default function Document(): JSX.Element {
           href='https://fonts.googleapis.com/css2?family=Stick&display=swap'
           rel='stylesheet'
         />
+        <meta property='og:image' content='/favicon.ico' />
+        <meta name='twitter:image' content='/favicon.ico' />
       </Head>
       <body>
         <Main />
