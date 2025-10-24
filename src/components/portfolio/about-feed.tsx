@@ -136,6 +136,7 @@ export function AboutFeed(): JSX.Element {
         return (
           <motion.article
             key={index}
+            id={`portfolio-item-about-${index}`}
             className='hover-animation accent-tab border-b border-light-border bg-main-background
                        px-4 py-6 outline-none dark:border-dark-border'
             {...({ tabIndex: 0 } as Record<string, unknown>)}

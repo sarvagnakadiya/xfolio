@@ -83,10 +83,32 @@ export function SearchContextProvider({
   };
 
   const scrollToItem = (itemId: string, itemType: string): void => {
+    console.log('scrollToItem called with:', { itemId, itemType });
+
     // Wait for the tab to switch and content to render
     setTimeout(() => {
-      const element = document.getElementById(`portfolio-item-${itemId}`);
+      // Determine the correct element ID based on the item type
+      let elementId: string;
+
+      if (itemType === 'skills') {
+        // For skills, the ID format is portfolio-item-skill-{id}
+        elementId = `portfolio-item-skill-${itemId}`;
+      } else if (itemType === 'about') {
+        // For about, the ID format is portfolio-item-about-{id}
+        elementId = `portfolio-item-about-${itemId}`;
+      } else {
+        // For other types (work, projects, education), the ID format is portfolio-item-{id}
+        elementId = `portfolio-item-${itemId}`;
+      }
+
+      console.log('Looking for element with ID:', elementId);
+
+      const element = document.getElementById(elementId);
+      console.log('Element found:', element);
+
       if (element) {
+        console.log('Element found, scrolling to it');
+
         // Remove any existing highlight
         document.querySelectorAll('.search-highlight').forEach((el) => {
           el.classList.remove('search-highlight');
@@ -105,6 +127,16 @@ export function SearchContextProvider({
         setTimeout(() => {
           element.classList.remove('search-highlight');
         }, 3000);
+      } else {
+        console.log('Element not found with ID:', elementId);
+        // Let's also check what elements are available
+        const allPortfolioItems = document.querySelectorAll(
+          '[id^="portfolio-item-"]'
+        );
+        console.log(
+          'Available portfolio items:',
+          Array.from(allPortfolioItems).map((el) => el.id)
+        );
       }
     }, 100);
   };

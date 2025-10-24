@@ -92,6 +92,7 @@ export function SkillsEntry({ entry }: SkillsEntryProps): JSX.Element {
 
   return (
     <motion.article
+      id={`portfolio-item-skill-${entry.id}`}
       className='hover-animation accent-tab border-b border-light-border bg-main-background
                  px-4 py-6 outline-none dark:border-dark-border'
       {...({ tabIndex: 0 } as Record<string, unknown>)}
