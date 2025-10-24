@@ -25,7 +25,7 @@ export function UserName({
     <Link href={username ? `/user/${username}` : '#'}>
       <a
         className={cn(
-          'flex items-center gap-1 truncate font-bold',
+          'flex items-center gap-1 font-bold',
           username ? 'custom-underline' : 'pointer-events-none',
           className
         )}
@@ -33,7 +33,7 @@ export function UserName({
       >
         <CustomTag className='truncate'>{name}</CustomTag>
         {verified && (
-          <i>
+          <i className='flex-shrink-0'>
             <HeroIcon
               className={cn('fill-accent-blue', iconClassName ?? 'h-5 w-5')}
               iconName='CheckBadgeIcon'

@@ -15,9 +15,7 @@ export function ClientOnly({
     setHasMounted(true);
   }, []);
 
-  if (!hasMounted) {
-    return <>{fallback}</>;
-  }
+  if (!hasMounted) return <>{fallback}</>;
 
   return <>{children}</>;
 }

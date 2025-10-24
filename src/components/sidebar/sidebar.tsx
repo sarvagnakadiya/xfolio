@@ -55,7 +55,7 @@ export function Sidebar(): JSX.Element {
                  lg:max-w-none xl:-mr-4 xl:w-full xl:max-w-xs xl:justify-end'
     >
       <div
-        className='fixed bottom-0 z-10 flex w-full flex-col justify-between border-t border-light-border 
+        className='fixed bottom-0 z-50 flex w-full flex-col justify-between border-t border-light-border 
                    bg-main-background py-0 dark:border-dark-border xs:top-0 xs:h-full xs:w-auto xs:border-0 
                    xs:bg-transparent xs:px-2 xs:py-3 xs:pt-2 md:px-4 xl:w-72'
       >

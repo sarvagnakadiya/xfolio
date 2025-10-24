@@ -45,7 +45,7 @@ export function UserDataLayout({ children }: LayoutProps): JSX.Element {
   return (
     <UserContextProvider value={{ user, loading }}>
       <MainContainer>
-        <MainHeader useActionButton action={back}></MainHeader>
+        <MainHeader useActionButton action={back} disableSticky></MainHeader>
         {children}
       </MainContainer>
     </UserContextProvider>

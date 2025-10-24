@@ -14,7 +14,6 @@ type HomeHeaderProps = {
   className?: string;
   disableSticky?: boolean;
   useActionButton?: boolean;
-  useMobileSidebar?: boolean;
   action?: () => void;
 };
 
@@ -26,7 +25,6 @@ export function MainHeader({
   className,
   disableSticky,
   useActionButton,
-  useMobileSidebar,
   action
 }: HomeHeaderProps): JSX.Element {
   return (
@@ -53,11 +51,11 @@ export function MainHeader({
             </Button>
             <div className='gap-0.1 flex flex-col'>
               <div className='flex items-center gap-1'>
-                <span className='text-lg font-bold text-light-primary dark:text-dark-primary'>
+                <span className='text-lg font-bold text-light-primary dark:text-dark-primary xs:text-xl'>
                   sqrt.base.eth
                 </span>
                 <HeroIcon
-                  className='h-5 w-5 text-main-accent'
+                  className='h-4 w-4 text-main-accent xs:h-5 xs:w-5'
                   iconName='CheckBadgeIcon'
                   solid
                 />

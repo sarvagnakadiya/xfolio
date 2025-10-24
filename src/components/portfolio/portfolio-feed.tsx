@@ -42,7 +42,7 @@ export function PortfolioFeed({
   return (
     <section>
       <AnimatePresence mode='popLayout'>
-        {entries.map((entry, index) => {
+        {entries.map((entry) => {
           if (type === 'skill') {
             return (
               <SkillsEntry

@@ -38,20 +38,20 @@ export function UserDetails({
   const detailIcons: Readonly<DetailIcon[]> = [
     [location, 'MapPinIcon'],
     [website, 'LinkIcon'],
-    [`Joined ${formatDate(createdAt, 'joined')}`, 'CalendarDaysIcon']
+    ['Joined the chaos 3 years ago', 'CalendarDaysIcon']
   ];
 
   return (
     <>
       <div>
         <UserName
-          className='-mb-1 text-xl'
+          className='-mb-1 text-lg font-bold xs:text-xl'
           name={name}
-          iconClassName='w-6 h-6'
+          iconClassName='w-4 h-4 xs:w-5 xs:h-5'
           verified={verified}
         />
         <div className='flex items-center gap-1 text-light-secondary dark:text-dark-secondary'>
-          <p>@{username}</p>
+          <p className='text-sm xs:text-base'>@{username}</p>
           {/* Removed user following component */}
         </div>
       </div>
@@ -68,20 +68,12 @@ export function UserDetails({
                   {index === 1 ? (
                     <a
                       className='custom-underline text-main-accent'
-                      href={`https://${detail}`}
+                      href={`${detail}`}
                       target='_blank'
                       rel='noreferrer'
                     >
                       {detail}
                     </a>
-                  ) : index === 2 ? (
-                    <button className='custom-underline group relative'>
-                      {detail}
-                      <ToolTip
-                        className='translate-y-1'
-                        tip={formatDate(createdAt, 'full')}
-                      />
-                    </button>
                   ) : (
                     <p>{detail}</p>
                   )}

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu } from '@headlessui/react';
 import cn from 'clsx';
@@ -7,7 +8,15 @@ import { CustomIcon } from '@components/ui/custom-icon';
 import { UserAvatar } from '@components/user/user-avatar';
 import { UserName } from '@components/user/user-name';
 import { UserUsername } from '@components/user/user-username';
-// Removed variants import
+import type { IconName } from '@components/ui/hero-icon';
+
+interface SocialLink {
+  name: string;
+  url: string;
+  icon: string;
+  color: string;
+  image?: string;
+}
 
 export function SidebarProfile(): JSX.Element {
   // Static portfolio profile data
@@ -16,6 +25,24 @@ export function SidebarProfile(): JSX.Element {
   const verified = true;
   const photoURL =
     'https://pbs.twimg.com/profile_images/1948213553237733376/Gv1W60bF_400x400.jpg';
+
+  const [socials, setSocials] = useState<SocialLink[]>([]);
+
+  useEffect(() => {
+    const fetchSocials = async (): Promise<void> => {
+      try {
+        const response = await fetch('/data/socials.json');
+        const data = (await response.json()) as SocialLink[];
+        setSocials(data);
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error('Failed to fetch social links:', error);
+        setSocials([]);
+      }
+    };
+
+    void fetchSocials();
+  }, []);
 
   return (
     <Menu className='relative' as='section'>
@@ -84,6 +111,31 @@ export function SidebarProfile(): JSX.Element {
                     </Button>
                   )}
                 </Menu.Item>
+                {socials.map((social, index) => (
+                  <Menu.Item key={index}>
+                    {({ active }): JSX.Element => (
+                      <Button
+                        className={cn(
+                          'flex w-full gap-3 rounded-md p-4',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        onClick={(): void => {
+                          window.open(
+                            social.url,
+                            '_blank',
+                            'noopener,noreferrer'
+                          );
+                        }}
+                      >
+                        <HeroIcon
+                          iconName={social.icon as IconName}
+                          className='h-5 w-5'
+                        />
+                        {social.name}
+                      </Button>
+                    )}
+                  </Menu.Item>
+                ))}
                 <i
                   className='absolute -bottom-[10px] left-2 translate-x-1/2 rotate-180
                              [filter:drop-shadow(#cfd9de_1px_-1px_1px)] 

@@ -29,7 +29,6 @@
     "skills": ["Solidity", "EIP-712", "Gasless", "NFT"],
     "verified": true,
     "github": "https://github.com/MirandaKing/handshake",
-    "demo": "https://youtu.be/hYLBDXt55S0",
     "projectLink": "https://forum.trondao.org/t/handshake-a-gasless-secure-and-more-reliable-way-of-token-and-nft-transfers-ensured-by-mutual-consent/27559",
     "category": "DeFi",
     "featured": true

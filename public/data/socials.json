@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "GitHub",
+    "username": "GitHub",
+    "photoURL": "https://pbs.twimg.com/profile_images/1633247750010830848/8zfRrYjA_400x400.png",
+    "verified": true,
+    "url": "https://github.com/sarvagnakadiya"
+  },
+  {
+    "id": "2",
+    "name": "LinkedIn",
+    "username": "LinkedIn",
+    "photoURL": "https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png",
+    "verified": true,
+    "url": "https://linkedin.com/in/sarvagnakadiya"
+  },
+  {
+    "id": "3",
+    "name": "Farcaster",
+    "username": "farcaster_xyz",
+    "photoURL": "https://pbs.twimg.com/profile_images/1980310281558409216/DWoYcKR7_400x400.jpg",
+    "verified": true,
+    "url": "https://warpcast.com/sarvagna"
+  },
+  {
+    "id": "4",
+    "name": "Telegram",
+    "username": "telegram",
+    "photoURL": "https://pbs.twimg.com/profile_images/1183117696730390529/LRDASku7_400x400.jpg",
+    "verified": false,
+    "url": "https://t.me/sarvagnakadiya"
+  },
+  {
+    "id": "5",
+    "name": "X (Twitter)",
+    "username": "x",
+    "photoURL": "https://pbs.twimg.com/profile_images/1683498543967879173/EHRSRyrp_400x400.jpg",
+    "verified": true,
+    "url": "https://x.com/sarvagnakadiya"
+  },
+  {
+    "id": "6",
+    "name": "Zora",
+    "username": "zora",
+    "photoURL": "https://pbs.twimg.com/profile_images/1912995896226443264/R9N6BIXd_400x400.jpg",
+    "verified": true,
+    "url": "https://zora.co/@sarvagna"
+  }
+]

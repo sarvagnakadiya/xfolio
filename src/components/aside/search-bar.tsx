@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import cn from 'clsx';
-import { HeroIcon } from '@components/ui/hero-icon';
-import { Button } from '@components/ui/button';
 import { useSearch } from '@lib/context/search-context';
 import { usePortfolio } from '@lib/context/portfolio-context';
+import { HeroIcon } from '@components/ui/hero-icon';
+import { Button } from '@components/ui/button';
 import { SearchSuggestions } from '@components/search/search-suggestions';
 import type { ChangeEvent, FormEvent, KeyboardEvent } from 'react';
 
@@ -51,9 +51,7 @@ export function SearchBar(): JSX.Element {
   };
 
   const handleEscape = ({ key }: KeyboardEvent<HTMLInputElement>): void => {
-    if (key === 'Escape') {
-      clearInputValue()();
-    }
+    if (key === 'Escape') clearInputValue()();
   };
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>): void => {

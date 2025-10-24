@@ -6,6 +6,7 @@ import { siteURL } from '@lib/env';
 import { HeroIcon } from '@components/ui/hero-icon';
 import { Button } from '@components/ui/button';
 import { ToolTip } from '@components/ui/tooltip';
+import { renderTextWithMentions } from '@lib/utils/parse-mentions';
 
 // Static about data - multiple tweet-like entries
 const aboutEntries = [
@@ -25,7 +26,7 @@ const aboutEntries = [
   {
     name: 'Sarvagna Kadiya',
     username: 'sarvagnakadiya',
-    text: 'Built @DCAapp — a Farcaster mini-app that automates DCA (dollar-cost averaging) into tokens. It lets users set up recurring buys and executes them on-chain through cron jobs. A small experiment that actually became useful for people tired of timing the market.',
+    text: 'Built @DCAapp, a Farcaster mini-app that automates DCA (dollar-cost averaging) into tokens. It lets users set up recurring buys and executes them on-chain through cron jobs. A small experiment that actually became useful for people tired of timing the market.',
     tags: ['DCAapp', 'DeFi', 'Automation', 'Farcaster'],
     image:
       'https://pbs.twimg.com/profile_images/1948213553237733376/Gv1W60bF_400x400.jpg',
@@ -154,22 +155,24 @@ export function AboutFeed(): JSX.Element {
               </div>
 
               <div className='flex flex-1 flex-col'>
-                <div className='flex items-center gap-1'>
-                  <h3 className='text-xl font-bold text-light-primary dark:text-dark-primary'>
-                    {about.name}
-                  </h3>
-                  <HeroIcon
-                    className='h-5 w-5 text-main-accent'
-                    iconName='CheckBadgeIcon'
-                    solid
-                  />
-                  <span className='text-base text-light-secondary dark:text-dark-secondary'>
+                <div className='flex flex-col gap-1 xs:flex-row xs:items-center xs:gap-1'>
+                  <div className='flex items-center gap-1'>
+                    <h3 className='text-lg font-bold text-light-primary dark:text-dark-primary xs:text-xl'>
+                      {about.name}
+                    </h3>
+                    <HeroIcon
+                      className='h-4 w-4 text-main-accent xs:h-5 xs:w-5'
+                      iconName='CheckBadgeIcon'
+                      solid
+                    />
+                  </div>
+                  <span className='text-sm text-light-secondary dark:text-dark-secondary xs:text-base'>
                     @{about.username}
                   </span>
                 </div>
 
                 <p className='mt-3 whitespace-pre-wrap break-words text-light-primary dark:text-dark-primary'>
-                  {about.text}
+                  {renderTextWithMentions(about.text)}
                 </p>
 
                 <div className='mt-2 flex flex-wrap gap-2'>

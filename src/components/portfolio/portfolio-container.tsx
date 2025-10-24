@@ -62,41 +62,8 @@ export function PortfolioContainer(): JSX.Element {
           />
         );
 
-      case 'socials': {
-        const socialLinks = [
-          {
-            name: 'Twitter',
-            url: 'https://x.com/sarvagnakadiya',
-            icon: 'ChatBubbleLeftRightIcon',
-            color: '#1DA1F2'
-          },
-          {
-            name: 'GitHub',
-            url: 'https://github.com/sarvagnakadiya',
-            icon: 'CodeBracketIcon',
-            color: '#333'
-          },
-          {
-            name: 'LinkedIn',
-            url: 'https://linkedin.com/in/sarvagnakadiya',
-            icon: 'BriefcaseIcon',
-            color: '#0077B5'
-          },
-          {
-            name: 'Zora',
-            url: 'https://zora.co/@sarvagna',
-            icon: 'SparklesIcon',
-            color: '#8B5CF6'
-          },
-          {
-            name: 'Portfolio',
-            url: 'https://sarvagnakadiya.dev',
-            icon: 'GlobeAltIcon',
-            color: '#6366F1'
-          }
-        ];
-        return <SocialsFeed socials={socialLinks} />;
-      }
+      case 'socials':
+        return <SocialsFeed />;
 
       default:
         return null;

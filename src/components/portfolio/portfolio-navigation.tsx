@@ -57,7 +57,7 @@ export function PortfolioNavigation(): JSX.Element {
     : baseNavLinks;
 
   return (
-    <nav className='hover-animation hide-scrollbar relative z-50 flex justify-between overflow-y-auto border-b border-light-border bg-main-background dark:border-dark-border'>
+    <nav className='hover-animation hide-scrollbar sticky top-0 z-50 flex justify-between overflow-y-auto border-b border-light-border bg-main-background dark:border-dark-border'>
       {navLinks.map(({ name, path }) => (
         <PortfolioNavLink
           key={path}

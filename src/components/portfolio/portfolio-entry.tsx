@@ -23,6 +23,7 @@ export interface PortfolioEntry {
   technologies?: string[];
   github?: string;
   demo?: string;
+  projectLink?: string;
   featured?: boolean;
   verified?: boolean;
   type?: string;
@@ -141,19 +142,19 @@ export function PortfolioEntry({
         </div>
         <div className='flex flex-1 flex-col gap-2'>
           <div className='flex items-center gap-1'>
-            <h3 className='text-lg font-bold text-light-primary dark:text-dark-primary'>
+            <h3 className='truncate text-lg font-bold text-light-primary dark:text-dark-primary xs:text-xl'>
               {entry.title}
             </h3>
             {entry.featured && (
               <HeroIcon
-                className='h-4 w-4 text-main-accent'
+                className='h-4 w-4 flex-shrink-0 text-main-accent xs:h-5 xs:w-5'
                 iconName='StarIcon'
                 solid
               />
             )}
             {entry.verified && (
               <HeroIcon
-                className='h-4 w-4 text-main-accent'
+                className='h-4 w-4 flex-shrink-0 text-main-accent xs:h-5 xs:w-5'
                 iconName='CheckBadgeIcon'
                 solid
               />
@@ -161,22 +162,22 @@ export function PortfolioEntry({
           </div>
 
           <div className='flex flex-col gap-1 text-light-secondary dark:text-dark-secondary sm:flex-row sm:items-center sm:gap-2'>
-            <span className='text-sm'>{entry.subtitle}</span>
+            <span className='text-xs xs:text-sm'>{entry.subtitle}</span>
             {entry.date && (
               <div className='flex items-center gap-2'>
                 <span className='hidden text-xs sm:inline'>·</span>
-                <span className='text-sm'>{entry.date}</span>
+                <span className='text-xs xs:text-sm'>{entry.date}</span>
               </div>
             )}
             {entry.location && (
               <div className='flex items-center gap-2'>
                 <span className='hidden text-xs sm:inline'>·</span>
-                <span className='text-sm'>{entry.location}</span>
+                <span className='text-xs xs:text-sm'>{entry.location}</span>
               </div>
             )}
           </div>
 
-          <p className='whitespace-pre-wrap break-words text-light-primary dark:text-dark-primary'>
+          <p className='whitespace-pre-wrap break-words text-sm text-light-primary dark:text-dark-primary xs:text-base'>
             {entry.description}
           </p>
 
@@ -224,15 +225,15 @@ export function PortfolioEntry({
             </div>
           )}
 
-          {(entry.github || entry.demo) && (
-            <div className='flex gap-4'>
+          {(entry.github || entry.demo || entry.projectLink) && (
+            <div className='flex flex-wrap gap-4'>
               {entry.github && (
                 <a
                   href={entry.github}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-main-accent hover:underline'
-                  onClick={preventBubbling()}
+                  onClick={preventBubbling(null, true)}
                 >
                   <HeroIcon
                     className='mr-1 inline h-4 w-4'
@@ -247,13 +248,28 @@ export function PortfolioEntry({
                   target='_blank'
                   rel='noopener noreferrer'
                   className='text-main-accent hover:underline'
-                  onClick={preventBubbling()}
+                  onClick={preventBubbling(null, true)}
                 >
                   <HeroIcon
                     className='mr-1 inline h-4 w-4'
                     iconName='GlobeAltIcon'
                   />
                   Live Demo
+                </a>
+              )}
+              {entry.projectLink && (
+                <a
+                  href={entry.projectLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-main-accent hover:underline'
+                  onClick={preventBubbling(null, true)}
+                >
+                  <HeroIcon
+                    className='mr-1 inline h-4 w-4'
+                    iconName='LinkIcon'
+                  />
+                  Project Link
                 </a>
               )}
             </div>

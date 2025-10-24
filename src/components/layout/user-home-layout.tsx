@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Popover } from '@headlessui/react';
+import cn from 'clsx';
 import { useUser } from '@lib/context/user-context';
 import { SEO } from '@components/common/seo';
 // Removed user home cover and avatar imports
@@ -10,8 +12,6 @@ import { Loading } from '@components/ui/loading';
 import { HeroIcon } from '@components/ui/hero-icon';
 import { ToolTip } from '@components/ui/tooltip';
 import { UserShare } from '@components/user/user-share';
-import { Popover } from '@headlessui/react';
-import cn from 'clsx';
 // Removed variants import
 import type { LayoutProps } from './common-layout';
 
@@ -21,14 +21,6 @@ export function UserHomeLayout({ children }: LayoutProps): JSX.Element {
   const {
     query: { id }
   } = useRouter();
-
-  const coverData = userData?.coverPhotoURL
-    ? { src: userData.coverPhotoURL, alt: userData.name }
-    : null;
-
-  const profileData = userData
-    ? { src: userData.photoURL, alt: userData.name }
-    : null;
 
   return (
     <>

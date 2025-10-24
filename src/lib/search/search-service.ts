@@ -45,28 +45,22 @@ export class SearchService {
     if (this.isInitialized) return;
 
     try {
-      const [workRes, educationRes, projectsRes, skillsRes, highlightsRes] =
-        await Promise.all([
+      const [workRes, educationRes, projectsRes, skillsRes] = await Promise.all(
+        [
           fetch('/data/experience.json'),
           fetch('/data/education.json'),
           fetch('/data/projects.json'),
-          fetch('/data/skills.json'),
-          fetch('/data/highlights.json')
-        ]);
+          fetch('/data/skills.json')
+        ]
+      );
 
-      const [
-        workData,
-        educationData,
-        projectsData,
-        skillsData,
-        highlightsData
-      ] = await Promise.all([
-        workRes.json() as Promise<any[]>,
-        educationRes.json() as Promise<any[]>,
-        projectsRes.json() as Promise<any[]>,
-        skillsRes.json() as Promise<any[]>,
-        highlightsRes.json() as Promise<any[]>
-      ]);
+      const [workData, educationData, projectsData, skillsData] =
+        await Promise.all([
+          workRes.json() as Promise<any[]>,
+          educationRes.json() as Promise<any[]>,
+          projectsRes.json() as Promise<any[]>,
+          skillsRes.json() as Promise<any[]>
+        ]);
 
       // Combine all data with type information
       this.allData = [
@@ -83,13 +77,6 @@ export class SearchService {
         ),
         ...skillsData.map(
           (item: any) => ({ ...item, dataType: 'skill' } as any)
-        ),
-        ...highlightsData.map(
-          (item: any) =>
-            ({
-              ...item,
-              dataType: 'highlight'
-            } as any)
         )
       ];
 

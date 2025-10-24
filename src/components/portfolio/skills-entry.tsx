@@ -113,12 +113,12 @@ export function SkillsEntry({ entry }: SkillsEntryProps): JSX.Element {
 
         <div className='flex flex-1 flex-col gap-3'>
           <div className='flex items-center gap-2'>
-            <h3 className='text-xl font-bold text-light-primary dark:text-dark-primary'>
+            <h3 className='truncate text-lg font-bold text-light-primary dark:text-dark-primary xs:text-xl'>
               {entry.title}
             </h3>
             {entry.verified && (
               <HeroIcon
-                className='h-5 w-5 text-main-accent'
+                className='h-4 w-4 flex-shrink-0 text-main-accent xs:h-5 xs:w-5'
                 iconName='CheckBadgeIcon'
                 solid
               />
@@ -126,16 +126,18 @@ export function SkillsEntry({ entry }: SkillsEntryProps): JSX.Element {
           </div>
 
           <div className='flex items-center gap-2 text-light-secondary dark:text-dark-secondary'>
-            <span className='text-sm font-medium'>{entry.subtitle}</span>
+            <span className='text-xs font-medium xs:text-sm'>
+              {entry.subtitle}
+            </span>
             {entry.location && (
               <>
                 <span className='text-xs'>·</span>
-                <span className='text-sm'>{entry.location}</span>
+                <span className='text-xs xs:text-sm'>{entry.location}</span>
               </>
             )}
           </div>
 
-          <p className='whitespace-pre-wrap break-words text-light-primary dark:text-dark-primary'>
+          <p className='whitespace-pre-wrap break-words text-sm text-light-primary dark:text-dark-primary xs:text-base'>
             {entry.description}
           </p>
 
