@@ -19,7 +19,7 @@ export function UserDataLayout({ children }: LayoutProps): JSX.Element {
     id: 'portfolio-user',
     name: 'Sarvagna Kadiya',
     username: 'sarvagnakadiya',
-    bio: 'Full-stack developer passionate about creating innovative solutions.',
+    bio: 'Blockchain dev',
     location: 'Bangalore, Karnataka',
     website: 'https://x.com/sarvagnakadiya',
     joinDate: 'Joined the chaos 3 years ago',

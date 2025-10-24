@@ -13,7 +13,7 @@ const aboutEntries = [
   {
     name: 'Sarvagna Kadiya',
     username: 'sarvagnakadiya',
-    text: 'Full-stack developer passionate about creating innovative solutions. I love building web applications and exploring new technologies. Specialized in blockchain development, AI integration, and Web3 solutions. I have extensive experience in smart contract development, DeFi protocols, and building decentralized applications.',
+    text: "hullo!\ngm, I'm Sarvagna Kadiya; buildor, developor, and an aspiring web3 foundor who totally believes\ntheir product will change the world (or at least make a dent) (eventually).\nDefi, AI, payments, crypto—yap; Cars, F1—yap-yap-yap\nI'm your go-to yap buddy for all things buzzword-worthy.\nAwkward on socials, extrovert IRL (yeah, it's a vibe)",
     tags: [
       'Building Web3 applications and DeFi protocols',
       'Available for freelance projects'
@@ -26,7 +26,7 @@ const aboutEntries = [
   {
     name: 'Sarvagna Kadiya',
     username: 'sarvagnakadiya',
-    text: 'Built @DCAapp, a Farcaster mini-app that automates DCA (dollar-cost averaging) into tokens. It lets users set up recurring buys and executes them on-chain through cron jobs. A small experiment that actually became useful for people tired of timing the market.',
+    text: 'Building @DCAapp, a Farcaster mini-app that automates DCA (dollar-cost averaging) into tokens. It lets users set up recurring buys and executes them on-chain through cron jobs. A small experiment that actually became useful for people tired of timing the market.',
     tags: ['DCAapp', 'DeFi', 'Automation', 'Farcaster'],
     image:
       'https://pbs.twimg.com/profile_images/1948213553237733376/Gv1W60bF_400x400.jpg',
@@ -56,7 +56,7 @@ const aboutEntries = [
   {
     name: 'Sarvagna Kadiya',
     username: 'sarvagnakadiya',
-    text: 'Build AI agents that analyze on-chain data, trade meme tokens, and sometimes make better decisions than humans (keyword: sometimes). Blending crypto + AI is easily the most fun rabbit hole I’ve fallen into. (tbh lost interest in Ai agents)',
+    text: 'Built AI agents that analyze on-chain data, trade meme tokens, and sometimes make better decisions than humans (keyword: sometimes). Blending crypto + AI is easily the most fun rabbit hole I’ve fallen into. (tbh lost interest in Ai agents)',
     tags: ['AI Agents', 'On-chain Analysis', 'Trading Automation'],
     image:
       'https://pbs.twimg.com/profile_images/1948213553237733376/Gv1W60bF_400x400.jpg',
